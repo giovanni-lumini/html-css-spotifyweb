@@ -65,7 +65,7 @@ body{
 
 .col-12{
     width: 100%;
-    margin-bottom: 3rem;
+    margin-bottom: 2rem;
 }
 
 .col-2-pad{
@@ -124,14 +124,28 @@ a {
     height: 40%;
 }
 
+.title-image{
+    font-weight: bold;
+    color: white;
+}
+
+.sub-title-image{
+    font-weight: bold;
+    color: grey;
+    padding-top: 0.3rem;
+}
+
 .title-main{
     font-weight: bold;
     color: white;
+    padding-left: 1rem;
 }
 
 .sub-title-main{
     font-weight: bold;
     color: grey;
+    padding-top: 0.3rem;
+    padding-left: 1rem;
 }
 /* #region-nav */
 .nav{
@@ -145,9 +159,16 @@ a {
 }
 /* #endregion-nav */
 /* region-recently-played */
-
-
 /* endregion-recently-played */
+/* region-created-for-john-doe */
+/* endregion-created-for-john-doe */
+/* region-most-popular-artists */
+.img-rounded{
+    width: 100%;
+    aspect-ratio: 1;
+    border-radius: 50%;
+}
+/* endregion-most-popular-artists */
 /* #endregion-main */
 /* #endregion-content */
 
