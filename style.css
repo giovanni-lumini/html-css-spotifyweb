@@ -12,10 +12,17 @@
     .header{
         background-color: orange;
     }
+    .main{
+        background-color: plum;
+    }
 }
 
 .footer{
     background-color: yellow;
+}
+
+.col-12{
+    background-color: black;
 }
 
 /* #endregion-debug */
@@ -36,32 +43,63 @@ body{
     width: 100vw;
 }
 
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    height: 100%;
+}
+
+.col-12{
+    width: 100%;
+    margin-bottom: 3rem;
+}
+
+/* #endregion-common */
+
+/* #region-sidebar */
 .sidebar{
     height: 90%;
     width: 15%;
     position: relative;
 }
+/* #endregion-sidebar */
 
+/* #region-content */
 .content{
     height: 90%;
     width: 85%;
     position: absolute;
     top: 0;
     left: 15%;
-    /* overflow: scroll; */
-    .header{
-        height: 15%;
-        width: 100%;
-    }
-    .main {
-        overflow: scroll;
-        width: 100%;
-        height: 85%;
-    }
+}
+/* #region-header */
+.header{
+    height: 15%;
+    width: 100%;
+}
+/* #endregion-header */
+/* #region-main */
+.main {
+    overflow: scroll;
+    width: 100%;
+    height: 85%;
+    padding: 2rem;
+    
 }
 
+.h10{
+    height: 10%;
+}
+
+.h40{
+    height: 40%;
+}
+/* #endregion-main */
+/* #endregion-content */
+
+/* #region-footer */
 .footer{
     height: 10%;
     width: 100%;
 }
-/* #endregion-common */
+/* #endregion-footer */
