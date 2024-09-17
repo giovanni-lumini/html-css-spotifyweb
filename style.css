@@ -63,6 +63,14 @@ body{
     justify-content: center;
 }
 
+.align-items-center-jc-end{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: flex-end;
+
+}
+
 .col-12{
     width: 100%;
     margin-bottom: 2rem;
@@ -106,6 +114,15 @@ a {
 .header{
     height: 15%;
     width: 100%;
+}
+
+.upgrade-button{
+    margin: 0rem 1rem;
+    padding: 0.5rem 2rem;
+    border-radius: 2rem;
+    border-color: white;
+    color: white;
+    font-weight: bold;
 }
 /* #endregion-header */
 /* #region-main */
