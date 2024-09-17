@@ -92,6 +92,11 @@ a {
 .margin-top-1{
     margin-top: 1rem;
 }
+
+.margin-bottom-1{
+    margin-bottom: 1rem;
+}
+
 /* #endregion-common */
 
 /* #region-sidebar */
@@ -99,7 +104,63 @@ a {
     height: 90%;
     width: 15%;
     position: relative;
+    padding: 1rem;
+    
+    .row-column-sbtween{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: space-between;
+        height:90%;
+    }
+    
+    a{
+        text-decoration: none;
+        color: grey;
+        font-weight: bold;
+    }
+
+    .home{
+        color: white;
+    }
+
+    .row-sidebar{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    .logo-sidebar{
+        vertical-align: middle;
+        padding-right: 0.3rem;
+        filter: invert(1) opacity(40%);
+    }
+
+    .title-playlist{
+        color: white;
+        font-weight: bold;
+        padding-top: 0.5rem;
+        padding-bottom: 0.2rem;
+    }
+
+    .fa-plus{
+        height: 40px;
+        width: 40px;
+        padding-top: 0.6rem;
+        background-color: grey;
+        text-align: center;
+        margin-right: 0.3rem;
+    }
+
+    li{
+        list-style: none;
+        color: grey;
+        padding-top: 0.2rem;
+        font-weight: bold;
+    }
 }
+
 /* #endregion-sidebar */
 
 /* #region-content */
@@ -114,16 +175,17 @@ a {
 .header{
     height: 15%;
     width: 100%;
+    a{
+        text-decoration: none;
+        color: white;
+        font-weight: bold;
+        margin: 0rem 1rem;
+        padding: 0.5rem 2rem;
+        border-radius: 2rem;
+        border-color: white;
+    }
 }
 
-.upgrade-button{
-    margin: 0rem 1rem;
-    padding: 0.5rem 2rem;
-    border-radius: 2rem;
-    border-color: white;
-    color: white;
-    font-weight: bold;
-}
 /* #endregion-header */
 /* #region-main */
 .main {
