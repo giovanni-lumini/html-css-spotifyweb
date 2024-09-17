@@ -75,6 +75,13 @@ body{
     align-items: center;
 }
 
+.row-jc-end{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: end;
+    align-items: center;
+}
+
 .row-jc-center{
     display: flex;
     flex-wrap: wrap;
@@ -325,7 +332,8 @@ a {
     height: 10%;
     width: 100%;
     background-color: var(--footer);
-    padding: 1rem 0.3rem; 
+    padding: 1rem 0.5rem; 
+    /* footer-sx */
     .song-title{
         font-size: 0.9rem;
         color: white;
@@ -338,12 +346,40 @@ a {
         font-weight: bold;
         margin-left: 0.5rem;
     }
-
     .fa-regular{
         margin-right: 1rem;
         color: grey;
     }
+    /* footer-dx */
+    .fa-solid{
+        margin-left: 1rem;
+        color: grey;
+    }
+    .volume-line{
+        height: 4px;
+        width: 150px;
+        margin-left: 1rem;
+        background-color: grey;
+        border-radius: 2px;
+    }
 
+    .volume-line-up{
+        height: 4px;
+        width: 40px;
+        margin-left: 1rem;
+        background-color: white;
+        border-radius: 2px;
+    }
+
+    .p-relative{
+        position: relative;
+    }
+
+    .p-absolute{
+        position: absolute;
+        left: 0;
+        top: 0;
+    }
 
 }
 /* #endregion-footer */
