@@ -1,5 +1,12 @@
+:root{
+    --sidebar: #000000;
+    --header:#080b12;
+    --main:#141922;
+    --footer:#282828;
+}
+
 /* #region-debug */
-.screen{
+/* .screen{
     background-color: red;
 }
 
@@ -28,7 +35,7 @@
 .col-2{
     background-color: orangered;
     height: 100%;
-}
+} */
 
 /* #endregion-debug */
 
@@ -40,7 +47,7 @@
     font-family: "Roboto", sans-serif;
     font-weight: 100;
     font-style: normal;
-    border: 2px solid black;
+    /* border: 2px solid black; */
 }
 
 body{
@@ -97,6 +104,10 @@ a {
     margin-bottom: 1rem;
 }
 
+.margin-bottom-3{
+    margin-bottom: 3rem;
+}
+
 /* #endregion-common */
 
 /* #region-sidebar */
@@ -105,13 +116,14 @@ a {
     width: 15%;
     position: relative;
     padding: 1rem;
+    font-size: 0.7rem;
+    background-color: var(--sidebar);
     
-    .row-column-sbtween{
+    .row-column{
         display: flex;
         flex-wrap: wrap;
         flex-direction: column;
-        justify-content: space-between;
-        height:90%;
+        gap: 8.5rem;
     }
     
     a{
@@ -129,24 +141,43 @@ a {
         flex-wrap: wrap;
         justify-content: flex-start;
         align-items: center;
+        margin-bottom: 0.5rem;
     }
 
     .logo-sidebar{
         vertical-align: middle;
         padding-right: 0.3rem;
-        filter: invert(1) opacity(40%);
+        /* filter: invert(1) opacity(40%); */
+    }
+
+    .logo-profile{
+        height: 20px;
+        width: 20px;
+        vertical-align: middle;
+        background-color: grey;
+        border-radius: 50%;
+        border-color: grey;
+    }
+
+    .profile{
+        color: white;
+        padding-left: 0.3rem;
     }
 
     .title-playlist{
         color: white;
         font-weight: bold;
-        padding-top: 0.5rem;
-        padding-bottom: 0.2rem;
+        padding-top: 1rem;
+        padding-bottom: 0.5rem;
+    }
+
+    .text-playlist{
+        font-size: 0.9rem;
     }
 
     .fa-plus{
-        height: 40px;
-        width: 40px;
+        height: 30px;
+        width: 30px;
         padding-top: 0.6rem;
         background-color: grey;
         text-align: center;
@@ -156,8 +187,15 @@ a {
     li{
         list-style: none;
         color: grey;
-        padding-top: 0.2rem;
+        padding-top: 1rem;
         font-weight: bold;
+    }
+
+    .space-border-bottom{
+        width: 100%;
+        height: 0.5rem;
+        margin-bottom: 1rem;
+        border-bottom: 2px solid grey;
     }
 }
 
@@ -175,14 +213,14 @@ a {
 .header{
     height: 15%;
     width: 100%;
+    background-color: var(--header);
     a{
-        text-decoration: none;
         color: white;
         font-weight: bold;
         margin: 0rem 1rem;
         padding: 0.5rem 2rem;
         border-radius: 2rem;
-        border-color: white;
+        border: solid 2px white;
     }
 }
 
@@ -193,6 +231,7 @@ a {
     width: 100%;
     height: 85%;
     padding: 2rem;
+    background-color: var(--main);
 }
 
 .h10{
@@ -220,11 +259,17 @@ a {
     padding-left: 1rem;
 }
 
-.sub-title-main{
+.title-image{
+    font-weight: bold;
+    color: white;
+    font-size: 0.8rem;
+    margin-top: 0.5rem;
+}
+
+.sub-title-image{
     font-weight: bold;
     color: grey;
     padding-top: 0.3rem;
-    padding-left: 1rem;
 }
 /* #region-nav */
 .nav{
@@ -255,5 +300,6 @@ a {
 .footer{
     height: 10%;
     width: 100%;
+    background-color: var(--footer);
 }
 /* #endregion-footer */
