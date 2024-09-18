@@ -641,6 +641,10 @@ a:hover{
             width: calc((100%/12)*3);
             padding: 0.5rem;
         }
+
+        .p-abs-image{
+            padding: 0.5rem;
+        }
     }
     /* endregion-content */
 
@@ -654,16 +658,6 @@ a:hover{
             width: calc((100%/12)*5);
         }
 
-
-        
-        .fa-circle-play{
-            font-size: 1.5rem;
-        }
-    
-        .fa-circle-play:hover{
-            font-size: 2rem;
-        }
-    
         .time{
             color: white;
             font-size: 0.7rem;
@@ -691,12 +685,7 @@ a:hover{
             background-color: var(--evidence-row);
             border-radius: 2px;
             border-right: solid 10px rgb(255, 255, 255);
-        }
-    
-        
-        
+        }  
     }
-
-
-    /* region-footer */
+    /* endregion-footer */
 }
