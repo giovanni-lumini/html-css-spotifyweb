@@ -76,6 +76,13 @@ body{
     align-items: center;
 }
 
+.row-x-y-center{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
 .row-jc-end{
     display: flex;
     flex-wrap: wrap;
@@ -144,6 +151,14 @@ a {
     margin-bottom: 3rem;
 }
 
+a:hover{
+    color:white !important;
+}
+
+.fa-regular:hover{
+    color: white !important;
+}
+
 /* #endregion-common */
 
 /* #region-sidebar */
@@ -205,21 +220,17 @@ a {
         color: white;
         font-weight: bold;
         padding-top: 1rem;
-        padding-bottom: 0.5rem;
+        padding-bottom: 1rem;
     }
 
     .text-playlist{
         font-size: 0.8rem;
         font-weight: bold;
+        margin-left: 0.4rem;
     }
 
-    .fa-plus{
-        color: var(--sidebar);
-        font-size: 1.5rem;
-        background-color: grey;
-        text-align: center;
-        margin-right: 0.3rem;
-        padding: 0.2rem 0.35rem;
+    .fa-square-plus{
+        font-size: 2rem;
     }
 
     li{
@@ -295,6 +306,13 @@ a {
     font-weight: bold;
     color: white;
     padding-left: 1rem;
+    padding-bottom: 0.5rem;
+}
+
+.sub-title-main{
+    font-weight: bold;
+    color: grey;
+    padding-left: 1rem;
 }
 
 .title-image{
@@ -326,17 +344,70 @@ a {
     }
 }
 /* #endregion-nav */
-/* region-recently-played */
-/* endregion-recently-played */
-/* region-created-for-john-doe */
-/* endregion-created-for-john-doe */
-/* region-most-popular-artists */
+/* #region-recently-played */
+.p-rel-image{
+    position: relative;
+}
+
+.p-abs-image{
+    width: 100%;
+    aspect-ratio: 1;
+    position: absolute;
+    left: 0;
+    top: 0;
+    padding: 1rem;
+    .hov-image{
+        background-color: rgba(0, 0, 0, 0.568);
+        width: 100%;
+        aspect-ratio: 1;
+        .fa-circle-play{
+            color: white;
+            font-size: 3rem;
+            
+        }
+    }
+    display: none;
+}
+
+.p-rel-image:hover .p-abs-image{
+    display: block;
+}
+/* #endregion-recently-played */
+/* #region-created-for-john-doe */
+/* #endregion-created-for-john-doe */
+/* #region-most-popular-artists */
 .img-rounded{
     width: 100%;
     aspect-ratio: 1;
     border-radius: 50%;
 }
-/* endregion-most-popular-artists */
+
+.p-abs-image-rounded{
+    width: 100%;
+    aspect-ratio: 1;
+    position: absolute;
+    left: 0;
+    top: 0;
+    padding: 1rem;
+    .hov-image{
+        background-color: rgba(0, 0, 0, 0.568);
+        width: 100%;
+        aspect-ratio: 1;
+        border-radius: 50%;
+        .fa-circle-play{
+            color: white;
+            font-size: 3rem;
+            
+        }
+    }
+    display: none;
+}
+
+.p-rel-image:hover .p-abs-image-rounded{
+    display: block;
+}
+
+/* #endregion-most-popular-artists */
 /* #endregion-main */
 /* #endregion-content */
 
@@ -408,6 +479,7 @@ a {
         left: 0;
         top: 0;
     }
+    /* footer-dx */
     .row-center{
         display: flex;
         flex-wrap: wrap;
@@ -424,8 +496,6 @@ a {
         font-weight: bold;
         padding: 0rem 2rem;
     }
-
-
 
     .volume-line-foot-center{
         height: 4px;
