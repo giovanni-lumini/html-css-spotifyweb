@@ -271,6 +271,16 @@ a:hover{
         border-radius: 2rem;
         border: solid 2px white;
     }
+
+    a:hover{
+        color: rgb(255, 255, 255);
+        font-weight: bold;
+        font-size: 1.1rem;
+        margin: 0rem 1rem;
+        padding: 0.7rem 2.5rem;
+        border-radius: 2.5rem;
+        border: solid 2px rgb(255, 255, 255);
+    }
 }
 
 /* #endregion-header */
