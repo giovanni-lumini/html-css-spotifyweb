@@ -612,9 +612,6 @@ a:hover{
     }
     /* endregion-sidebar */
 
-
-
-
     /* region-content */
     .content{
         height: 90%;
@@ -622,6 +619,36 @@ a:hover{
         position: absolute;
         top: 0;
         left: 30%;
+
+        .nav{
+            padding: 0.3rem 0.5rem;
+            font-size: 0.7rem;
+            
+            a {
+                text-decoration: none;
+                color: grey;
+                font-weight: bold;
+            }
+        }
+
+        .row-jc-start-768{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: flex-start;
+        }
+
+        .col-3-768{
+            width: calc((100%/12)*3);
+            padding: 0.5rem;
+        }
     }
     /* endregion-content */
+
+    /* region-footer */
+    .footer{
+        
+    }
+
+
+    /* region-footer */
 }
