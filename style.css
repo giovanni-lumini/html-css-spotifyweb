@@ -593,7 +593,7 @@ a:hover{
 
 /* tablet max-width: 768px */
 @media screen and (max-width: 768px) {
-    /* region-sidebar */
+    /* #region-sidebar */
     .sidebar{
         height: 90%;
         width: 30%;
@@ -610,9 +610,9 @@ a:hover{
             height: 85%;
         }
     }
-    /* endregion-sidebar */
+    /* #endregion-sidebar */
 
-    /* region-content */
+    /* #region-content */
     .content{
         height: 90%;
         width: 70%;
@@ -645,10 +645,20 @@ a:hover{
         .p-abs-image{
             padding: 0.5rem;
         }
-    }
-    /* endregion-content */
 
-    /* region-footer */
+        .header{
+            a{
+                font-size: 0.7rem;
+            }
+        
+            a:hover{
+                font-size: 0.8rem;
+            }
+        }
+    }
+    /* #endregion-content */
+
+    /* #region-footer */
     .footer{
         .col-35-768{
             width: calc((100%/12)*3.5);
@@ -687,5 +697,5 @@ a:hover{
             border-right: solid 10px rgb(255, 255, 255);
         }  
     }
-    /* endregion-footer */
+    /* #endregion-footer */
 }
