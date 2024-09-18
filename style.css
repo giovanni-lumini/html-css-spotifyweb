@@ -420,7 +420,6 @@ a:hover{
 /* #endregion-most-popular-artists */
 /* #endregion-main */
 /* #endregion-content */
-
 /* #region-footer */
 .footer{
     height: 10%;
@@ -454,11 +453,6 @@ a:hover{
         margin: 0rem 0.5rem;
         color: white;
     }
-
-    .fa-circle-play{
-        font-size: 2rem;
-    }
-
     /* footer-dx */
     .fa-solid{
         margin: 0rem 0.5rem;
@@ -474,10 +468,19 @@ a:hover{
 
     .volume-line-up{
         height: 4px;
-        width: 20px;
+        width: 40px;
         margin-left: 1rem;
         background-color: white;
         border-radius: 2px;
+    }
+
+    .volume-line-up:hover{
+        height: 4px;
+        width: 40px;
+        margin-left: 1rem;
+        background-color:var(--evidence-row);
+        border-radius: 2px;
+        border-right: solid 10px rgb(255, 255, 255);
     }
 
     .p-relative{
@@ -489,7 +492,26 @@ a:hover{
         left: 0;
         top: 0;
     }
-    /* footer-dx */
+
+    .pad-time-dx{
+        display: inline-block;
+        height: 15px;
+        width: 15px;
+        border-radius: 7.5px;
+        background-color: white;
+    }
+
+    .p-abs-pad-dx{
+        position: absolute;
+        left: 30px;
+        top: -6px;
+        display: none;
+    }
+
+    .p-relative:hover .p-abs-pad-dx{
+        display: block;
+    }
+    /* footer-center */
     .row-center{
         display: flex;
         flex-wrap: wrap;
@@ -500,6 +522,15 @@ a:hover{
     .col-12-foot{
         width: 100%;
     }
+
+    .fa-circle-play{
+        font-size: 1.5rem;
+    }
+
+    .fa-circle-play:hover{
+        font-size: 2rem;
+    }
+
     .time{
         color: white;
         font-size: 0.7rem;
@@ -521,6 +552,14 @@ a:hover{
         border-radius: 2px;
     }
 
+    .volume-line-up-foot-center:hover{
+        height: 4px;
+        width: 80px;
+        background-color: var(--evidence-row);
+        border-radius: 2px;
+        border-right: solid 10px rgb(255, 255, 255);
+    }
+
     .p-rel-foot-center{
         position: relative;
     }
@@ -529,6 +568,26 @@ a:hover{
         position: absolute;
         left: 0;
         top: 0;
+    }
+
+    .pad-time{
+        display: inline-block;
+        height: 20px;
+        width: 20px;
+        border-radius: 10px;
+        background-color: #ffffff;
+    }
+
+    .p-abs-pad{
+        position: absolute;
+        left: 65px;
+        top: -8px;
+        display: none;
+    }
+
+    .p-rel-foot-center:hover .p-abs-pad{
+        display: block;
+
     }
 }
 /* #endregion-footer */
