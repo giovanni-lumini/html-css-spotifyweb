@@ -58,7 +58,6 @@
     font-family: "Roboto", sans-serif;
     font-weight: 100;
     font-style: normal;
-    /* border: 2px solid black; */
 }
 
 body{
@@ -589,3 +588,40 @@ a:hover{
     }
 }
 /* #endregion-footer */
+
+
+
+/* tablet max-width: 768px */
+@media screen and (max-width: 768px) {
+    /* region-sidebar */
+    .sidebar{
+        height: 90%;
+        width: 30%;
+        position: relative;
+        padding: 1rem;
+        font-size: 0.7rem;
+        background-color: var(--sidebar);
+
+        .row-column{
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: column;
+            justify-content: space-between;
+            height: 85%;
+        }
+    }
+    /* endregion-sidebar */
+
+
+
+
+    /* region-content */
+    .content{
+        height: 90%;
+        width: 70%;
+        position: absolute;
+        top: 0;
+        left: 30%;
+    }
+    /* endregion-content */
+}
