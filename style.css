@@ -646,6 +646,54 @@ a:hover{
 
     /* region-footer */
     .footer{
+        .col-35-768{
+            width: calc((100%/12)*3.5);
+        }
+
+        .col-50-768{
+            width: calc((100%/12)*5);
+        }
+
+
+        
+        .fa-circle-play{
+            font-size: 1.5rem;
+        }
+    
+        .fa-circle-play:hover{
+            font-size: 2rem;
+        }
+    
+        .time{
+            color: white;
+            font-size: 0.7rem;
+            font-weight: bold;
+            padding: 0rem 0.5rem;
+        }
+    
+        .volume-line-foot-center{
+            height: 4px;
+            width: 200px;
+            background-color: grey;
+            border-radius: 2px;
+        }
+    
+        .volume-line-up-foot-center{
+            height: 4px;
+            width: 80px;
+            background-color: white;
+            border-radius: 2px;
+        }
+    
+        .volume-line-up-foot-center:hover{
+            height: 4px;
+            width: 80px;
+            background-color: var(--evidence-row);
+            border-radius: 2px;
+            border-right: solid 10px rgb(255, 255, 255);
+        }
+    
+        
         
     }
 
