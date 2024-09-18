@@ -168,8 +168,13 @@ a {
         font-weight: bold;
     }
 
-    .home{
+    .text-side-white{
         color: white;
+        font-weight: bold;
+    }
+
+    .text-side{
+        font-weight: bold;
     }
 
     .row-sidebar{
@@ -193,11 +198,7 @@ a {
         background-color: grey;
         border-radius: 50%;
         border-color: grey;
-    }
-
-    .profile{
-        color: white;
-        padding-left: 0.3rem;
+        margin-right: 0.3rem;
     }
 
     .title-playlist{
@@ -208,16 +209,17 @@ a {
     }
 
     .text-playlist{
-        font-size: 0.9rem;
+        font-size: 0.8rem;
+        font-weight: bold;
     }
 
     .fa-plus{
-        height: 30px;
-        width: 30px;
-        padding-top: 0.6rem;
+        color: var(--sidebar);
+        font-size: 1.5rem;
         background-color: grey;
         text-align: center;
         margin-right: 0.3rem;
+        padding: 0.2rem 0.35rem;
     }
 
     li{
