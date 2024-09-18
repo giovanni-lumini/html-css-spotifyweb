@@ -3,6 +3,7 @@
     --header:#080b12;
     --main:#141922;
     --footer:#282828;
+    --evidence-row: #97de2e;
 }
 
 /* #region-debug */
@@ -305,6 +306,12 @@ a {
     font-weight: bold;
     color: grey;
     padding-top: 0.3rem;
+}
+.evidence-row{
+    height: 10px;
+    width: 50%;
+    border-bottom: solid 2px var(--evidence-row);
+    margin: 0rem auto;
 }
 /* #region-nav */
 .nav{
