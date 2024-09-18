@@ -174,7 +174,7 @@ a:hover{
         display: flex;
         flex-wrap: wrap;
         flex-direction: column;
-        gap: 9.5rem;
+        gap: 9rem;
     }
     
     a{
