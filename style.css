@@ -164,16 +164,29 @@ a:hover{
     height: 90%;
     width: 15%;
     position: relative;
-    padding: 1rem;
+    /* padding: 1rem; */
     font-size: 0.7rem;
     background-color: var(--sidebar);
     
+    .logo{
+        width: 100%;
+        height: 15%;
+        padding: 1rem;
+    }
+
+    .container-menu-sidebar{
+        height: 85%;
+        padding: 1rem;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: space-between;
+    }
     .row-column{
         display: flex;
         flex-wrap: wrap;
         flex-direction: column;
         justify-content: space-between;
-        height: 88%;
     }
     
     a{
@@ -591,8 +604,165 @@ a:hover{
 
 
 
-/* tablet max-width: 768px */
-@media screen and (max-width: 768px) {
+
+
+/* max-width: 1200px */
+@media screen and (max-width: 1200px) {
+    /* #region-footer */
+    .footer{
+        .col-35-768{
+            width: calc((100%/12)*3.5);
+        }
+
+        .col-50-768{
+            width: calc((100%/12)*5);
+        }
+
+        .time{
+            color: white;
+            font-size: 0.7rem;
+            font-weight: bold;
+            padding: 0rem 0.5rem;
+        }
+    
+        .volume-line-foot-center{
+            height: 4px;
+            width: 200px;
+            background-color: grey;
+            border-radius: 2px;
+        }
+    
+        .volume-line-up-foot-center{
+            height: 4px;
+            width: 80px;
+            background-color: white;
+            border-radius: 2px;
+        }
+    
+        .volume-line-up-foot-center:hover{
+            height: 4px;
+            width: 80px;
+            background-color: var(--evidence-row);
+            border-radius: 2px;
+            border-right: solid 10px rgb(255, 255, 255);
+        }  
+    }
+    /* #endregion-footer */
+}
+
+
+/* max-width: 980px */
+@media screen and (max-width: 980px) {
+    /* #region-sidebar */
+    .sidebar{
+        height: 90%;
+        width: 20%;
+        position: relative;
+        padding: 1rem;
+        font-size: 0.7rem;
+        background-color: var(--sidebar);
+
+        .row-column{
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: column;
+            justify-content: space-between;
+            height: 80%;
+        }
+    }
+    /* #endregion-sidebar */
+
+    /* #region-content */
+    .content{
+        height: 90%;
+        width: 80%;
+        position: absolute;
+        top: 0;
+        left: 20%;
+
+        .nav{
+            padding: 0.3rem 0.5rem;
+            font-size: 0.7rem;
+            
+            a {
+                text-decoration: none;
+                color: grey;
+                font-weight: bold;
+            }
+        }
+
+        .row-jc-start-768{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: flex-start;
+        }
+
+        .col-3-768{
+            width: calc((100%/12)*3);
+            padding: 0.5rem;
+        }
+
+        .p-abs-image{
+            padding: 0.5rem;
+        }
+
+        .header{
+            a{
+                font-size: 0.7rem;
+            }
+        
+            a:hover{
+                font-size: 0.8rem;
+            }
+        }
+    }
+    /* #endregion-content */
+
+    /* #region-footer */
+    .footer{
+        .col-35-768{
+            width: calc((100%/12)*3.5);
+        }
+
+        .col-50-768{
+            width: calc((100%/12)*5);
+        }
+
+        .time{
+            color: white;
+            font-size: 0.7rem;
+            font-weight: bold;
+            padding: 0rem 0.5rem;
+        }
+    
+        .volume-line-foot-center{
+            height: 4px;
+            width: 200px;
+            background-color: grey;
+            border-radius: 2px;
+        }
+    
+        .volume-line-up-foot-center{
+            height: 4px;
+            width: 80px;
+            background-color: white;
+            border-radius: 2px;
+        }
+    
+        .volume-line-up-foot-center:hover{
+            height: 4px;
+            width: 80px;
+            background-color: var(--evidence-row);
+            border-radius: 2px;
+            border-right: solid 10px rgb(255, 255, 255);
+        }  
+    }
+    /* #endregion-footer */
+}
+
+
+/* tablet width: 768px */
+@media screen and (width: 768px) {
     /* #region-sidebar */
     .sidebar{
         height: 90%;
@@ -699,3 +869,4 @@ a:hover{
     }
     /* #endregion-footer */
 }
+
