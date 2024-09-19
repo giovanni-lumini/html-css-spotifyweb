@@ -164,10 +164,8 @@ a:hover{
     height: 90%;
     width: 15%;
     position: relative;
-    /* padding: 1rem; */
     font-size: 0.7rem;
     background-color: var(--sidebar);
-    
     .logo{
         width: 100%;
         height: 15%;
@@ -176,7 +174,7 @@ a:hover{
 
     .container-menu-sidebar{
         height: 85%;
-        padding: 1rem;
+        padding: 0rem 1rem;
         display: flex;
         flex-wrap: wrap;
         flex-direction: column;
