@@ -4,6 +4,8 @@
     --main:#141922;
     --footer:#282828;
     --evidence-row: #97de2e;
+    --evidence-row: rg grey;
+    
 }
 
 /* #region-debug */
@@ -210,10 +212,15 @@ a:hover{
         margin-bottom: 0.5rem;
     }
 
+    .logo-sidebar-home{
+        vertical-align: middle;
+        padding-right: 0.3rem;
+    }
+
     .logo-sidebar{
         vertical-align: middle;
         padding-right: 0.3rem;
-        /* filter: invert(1) opacity(40%); */
+        filter: invert(50%) sepia(0%) saturate(1877%) hue-rotate(339deg) brightness(129%) contrast(100%);
     }
 
     .logo-profile{
